@@ -1,0 +1,147 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Khula", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #16d9e3;
+}
+
+.start {
+  font-size: 1.5rem;
+}
+
+h1 {
+  
+  line-height: 1.4;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+.screen.down {
+  margin-top: 0vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  border: 2px solid #c0c0c0;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.time-btn:hover {
+  border: 2px solid #16d9e3;
+  color: #16d9e3;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #16d9e3;
+}
+
+#canvas1{
+   border: 5px solid black;
+   /* position: absolute; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); */
+   background: #4d79bc;
+   max-width: 100%;
+   max-height: 100%;
+   font-family: 'Bangers', cursive;
+}
+
+#fireExplosion, #smokeExplosion, #hivewhale, #drone, #gears, #projectile, #layer1, #layer2, #layer3, #layer4, #player, #angler1, #angler2, #lucky   {
+   display: none;    
+} 
+
+#restartButton {
+   background-color: #704caf; /* Цвет фона */
+   border: none;
+   color: white; /* Цвет текста */
+   padding: 10px 20px; /* Отступы внутри кнопки */
+   text-align: center; /* Выравнивание текста по центру */
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: all .3s linear;
+ }
+ 
+ /* Эффект наведения */
+ #restartButton:hover {
+   background-color: #4a3e8e;
+ }
+ 
+ /* Эффект нажатия */
+ #restartButton:active {
+   background-color: #361e50;
+ }
+
+ .time-btn__text{
+   color: white; /* Цвет текста */
+   padding: 10px 20px; /* Отступы внутри кнопки */
+   text-align: center; /* Выравнивание текста по центру */
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+  
+ }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript Game</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <div class="screen">
+      <h1 class="header">ржавый мир</h1>
+      <a href="#" class="start" id="start">Начать игру</a>
+   </div>
+
+   <div class="screen">
+      <h1>Выберите время</h1>
+      <ul class="time-list">
+         <li>
+            <button class="time-btn" data-time="15000" data="50">
+               15 сек
+            </button>
+            <br>
+            <p class="time-btn__text">Необходимо набрать 50 очков</p>
+         </li>
+         <li>
+            <button class="time-btn" data-time="20000" data="75">
+               20 сек
+            </button>
+            <br>
+            <p class="time-btn__text">Необходимо набрать 75 очков</p>
+         </li>
+         <li>
+            <button class="time-btn" data-time="30000" data="100">
+               30 сек
+            </button>
+            <br>
+            <p class="time-btn__text">Необходимо набрать 100 очков</p>
+         </li>
+      </ul>
+   </div>
+
+   <div class="screen">
+      <canvas id="canvas1"></canvas>
+      <br>
+      <button id="restartButton">Начать сначала</button>
+
+      <!-- characters -->
+
+      <img src="img/player.png" id="player" alt="">
+      <img src="img/angler1.png" id="angler1" alt="">
+      <img src="img/angler2.png" id="angler2" alt="">
+      <img src="img/lucky.png" id="lucky" alt="">
+      <img src="img/hivewhale.png" id="hivewhale" alt="">
+      <img src="img/drone.png" id="drone" alt="">
+
+      <!-- props -->
+
+      <img src="img/projectile.png" id="projectile" alt="">
+      <img src="img/gears.png" id="gears" alt="">
+      <img src="img/smokeExplosion.png" id="smokeExplosion" alt="">
+      <img src="img/fireExplosion.png" id="fireExplosion" alt="">
+
+
+
+      <!-- environment -->
+      <img src="img/layer1.png" id="layer1" alt="">
+      <img src="img/layer2.png" id="layer2" alt="">
+      <img src="img/layer3.png" id="layer3" alt="">
+      <img src="img/layer4.png" id="layer4" alt="">
+
+   </div>
+
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>
